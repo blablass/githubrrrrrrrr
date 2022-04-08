@@ -1,0 +1,17 @@
+colorful = ""
+function setup(){
+    canvas = createCanvas(500,500)
+    canvas.center()
+    video = createCapture(VIDEO)
+    video.hide()
+}
+function draw(){
+    image(video,0,0,500,500)
+    tint(colorful)
+}
+function idd(){
+    colorful = document.getElementById("somethinglikethat").value
+}
+function take_snapshot(){
+    save("ANYNAME.png")
+}
